@@ -5,3 +5,15 @@
 .div-facilidades{
     width: 325px;
 }
+
+.div-novedades{
+    width: 325px;
+}
+
+/*Este media Query es para definir un resposive que no tengamos en nuestro framework*/
+/*Donde dice que apartir de 768px el div novedades se ajuste/expanda a 696px */
+@media(min-width:768px){ 
+    .div-novedades{
+        width: 696px;
+    }
+}
