@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-419">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,7 +29,14 @@
       <!--navbar-expand- es la propiedad que me dice en que tamñao/resolucion se va a quebrar o cambiar el aspécto por ejemplo lg=≥992px
                                                                 osea cambiara su diseño apartir de 992 hacia abajo y md=≥768px-->
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><h1 class="m-0"><img class="d-block" src="./assets/logo-meteora.png" alt="logo de la tienda meteora"></h1></a>
+        <a class="navbar-brand" href="#"
+          ><h1 class="m-0">
+            <img
+              class="d-block"
+              src="./assets/logo-meteora.png"
+              alt="logo de la tienda meteora"
+            /></h1
+        ></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -61,9 +68,9 @@
               class="form-control me-2 rounded-0"
               type="search"
               placeholder="Ingresa el producto"
-              aria-label="Search"
+              aria-label="Buscar"
             />
-            <button class="btn btn-outline-light rounded-0 " type="submit">
+            <button class="btn btn-outline-light rounded-0" type="submit">
               Buscar
             </button>
           </form>
@@ -101,50 +108,42 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="w-100 img-fluid d-md-none" src="./assets/Mobile/banner1-mobile.png" alt="Modelo femenina vistiendo una blusa rosa fluoresente, en fondo lila">
-          <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="./assets/Tablet/banner1-tablet.png" alt="Modelo femenina vistiendo una blusa rosa fluoresente, en fondo lila">
-          <img class="w-100 img-fluid d-none d-xl-block" src="./assets/Desktop/banner1-desktop.png" alt="Modelo femenina vistiendo una blusa rosa fluoresente, en fondo lila">
+          <img
+            class="w-100 img-fluid d-md-none"
+            src="./assets/Mobile/banner1-mobile.png"
+            alt="Modelo femenina vistiendo una blusa rosa fluoresente, en fondo lila"
+          />
+          <!--w-100 es para que llene a lo ancho por completo nuestro espacio y el img-fluid es para hacer la img responsive, Por ultimo 
+          d-md-none le indica a la foto que apartir de esa resolucion hacia arriba no aparezca -->
+          <img
+            class="w-100 img-fluid d-none d-md-block d-xl-none"
+            src="./assets/Tablet/banner1-tablet.png"
+            alt="Modelo femenina vistiendo una blusa rosa fluoresente, en fondo lila"
+          />
+          <!--d-none le indica a la foto que cuando este en el display normal no me muestre esta imagen. d-md-block indica que cuando la imagen 
+          pase a el rango de md esta aparezca. d-xl-none apartir de xl no aparezca-->
+          <img
+            class="w-100 img-fluid d-none d-xl-block"
+            src="./assets/Desktop/banner1-desktop.png"
+            alt="Modelo femenina vistiendo una blusa rosa fluoresente, en fondo lila"
+          />
+        </div>
+        <div class="carousel-item">
+          <img class="w-100 img-fluid d-md-none" src="./assets/Mobile/banner2-mobile.png" alt="Modelo femenina vistiendo un conjunto negro en fondo rosado">
+          <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="./assets/Tablet/banner2-tablet.png" alt="Modelo femenina vistiendo un conjunto negro en fondo rosado">
+          <img class="w-100 img-fluid d-none d-xl-block" src="./assets/Desktop/banner2-desktop.png" alt="Modelo femenina vistiendo un conjunto negro en fondo rosado">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5>Colección Atemporal</h5>
+            <p>Estilo y calidad que duran.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <svg
-            aria-label="Placeholder: Second slide"
-            class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-            height="400"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="800"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#666"></rect>
-            <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
-          </svg>
+          <img class="w-100 img-fluid d-md-none" src="./assets/Mobile/banner3-mobile.png" alt="modelo masculino vistiendo raje gris">
+          <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="./assets/Tablet/banner3-tablet.png" alt="modelo masculino vistiendo raje gris">
+          <img class="w-100 img-fluid d-none d-xl-block" src="./assets/Desktop/banner3-desktop.png" alt="modelo masculino vistiendo raje gris">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <svg
-            aria-label="Placeholder: Third slide"
-            class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-            height="400"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="800"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#555"></rect>
-            <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
-          </svg>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5>Colección Atemporal</h5>
+            <p>Alto impacto visual, bajo impacto ambiental.</p>
           </div>
         </div>
       </div>
@@ -155,7 +154,7 @@
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="visually-hidden">Anterior</span>
       </button>
       <button
         class="carousel-control-next"
@@ -164,12 +163,12 @@
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidden">Siguiente</span>
       </button>
     </div>
 
     <!--Aqui empieza el apartado de secciones-->
-    <h2 class="text-center p-4">Búsqueda por categoría</h2>
+    <h2 class="text-center my-3 mt-xl-5">Búsqueda por categoría</h2>
 
     <div class="container row mx-auto g-4">
       <!-- <m> de margin y <x> de izquiera y derecha <auto> para que solo me lo acomode-->
@@ -177,156 +176,101 @@
       <div class="col-6 col-md-4 col-xxl-2">
         <!--El col total de una pagina es 12=1 columna, entonces 6=2 columnas en si es para indicar cuantas columnas
         queremos o en cuantas partes queremos que se divida el espacio -->
-        <div class="card">
-          <svg
-            aria-label="Placeholder: Image cap"
-            class="bd-placeholder-img card-img-top"
-            height="180"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#DAFF01"></rect>
-            <text x="47.5%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
+        <div class="card rounded-0 border-0">
+          <img class="d-block d-md-none" src="./assets/Mobile/categorias/categoria-camisetas.png" alt="Camiseta masculina verde">
+          <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/categorias/categoria-camisetas.png" alt="Camiseta masculina verde">
+          <img class="d-none d-xl-block" src="./assets/Desktop/categorias/categoria-camisetas.png" alt="Camiseta masculina verde">
           <div class="card-body bg-black text-bg-dark">
-            <p class="text-center">Categoria</p>
+            <p class="text-center">Camisetas</p>
           </div>
         </div>
       </div>
 
       <div class="col-6 col-md-4 col-xxl-2">
         <div class="card">
-          <svg
-            aria-label="Placeholder: Image cap"
-            class="bd-placeholder-img card-img-top"
-            height="180"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#DAFF01"></rect>
-            <text x="47.5%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
+          <img class="d-block d-md-none" src="./assets/Mobile/categorias/categoria-carteras.png" alt="Bolso Cafe">
+          <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/categorias/categoria-carteras.png" alt="Bolso Cafe">
+          <img class="d-none d-xl-block" src="./assets/Desktop/categorias/categoria-carteras.png" alt="Bolso Cafe">
           <div class="card-body bg-black text-bg-dark">
-            <p class="text-center">Categoria</p>
+            <p class="text-center">Carteras</p>
           </div>
         </div>
       </div>
 
       <div class="col-6 col-md-4 col-xxl-2">
         <div class="card">
-          <svg
-            aria-label="Placeholder: Image cap"
-            class="bd-placeholder-img card-img-top"
-            height="180"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#DAFF01"></rect>
-            <text x="47.5%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
+          <img class="d-block d-md-none" src="./assets/Mobile/categorias/categoria-calzados.png" alt="Tenis blnacos con diversos colores">
+          <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/categorias/categoria-calzados.png" alt="Tenis blnacos con diversos colores">
+          <img class="d-none d-xl-block" src="./assets/Desktop/categorias/categoria-calzados.png" alt="Tenis blnacos con diversos colores">
           <div class="card-body bg-black text-bg-dark">
-            <p class="text-center">Categoria</p>
+            <p class="text-center">Calzados</p>
           </div>
         </div>
       </div>
 
       <div class="col-6 col-md-4 col-xxl-2">
         <div class="card">
-          <svg
-            aria-label="Placeholder: Image cap"
-            class="bd-placeholder-img card-img-top"
-            height="180"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#DAFF01"></rect>
-            <text x="47.5%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
+          <img class="d-block d-md-none" src="./assets/Mobile/categorias/categoria-pantalones.png" alt="Pantalones jeans doblados">
+          <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/categorias/categoria-pantalones.png" alt="Pantalones jeans doblados">
+          <img class="d-none d-xl-block" src="./assets/Desktop/categorias/categoria-pantalones.png" alt="Pantalones jeans doblados">
           <div class="card-body bg-black text-bg-dark">
-            <p class="text-center">Categoria</p>
+            <p class="text-center">Pantalones</p>
           </div>
         </div>
       </div>
 
       <div class="col-6 col-md-4 col-xxl-2">
         <div class="card">
-          <svg
-            aria-label="Placeholder: Image cap"
-            class="bd-placeholder-img card-img-top"
-            height="180"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#DAFF01"></rect>
-            <text x="47.5%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
+          <img class="d-block d-md-none" src="./assets/Mobile/categorias/categoria-abrigos.png" alt="Abrigo cafe">
+          <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/categorias/categoria-abrigos.png" alt="Abrigo cafe">
+          <img class="d-none d-xl-block" src="./assets/Desktop/categorias/categoria-abrigos.png" alt="Abrigo cafe">
           <div class="card-body bg-black text-bg-dark">
-            <p class="text-center">Categoria</p>
+            <p class="text-center">Abrigos</p>
           </div>
         </div>
       </div>
 
       <div class="col-6 col-md-4 col-xxl-2">
         <div class="card">
-          <svg
-            aria-label="Placeholder: Image cap"
-            class="bd-placeholder-img card-img-top"
-            height="180"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#DAFF01"></rect>
-            <text x="47.5%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
+          <img class="d-block d-md-none" src="./assets/Mobile/categorias/categoria-gafas.png" alt="Gafas de sol">
+          <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/categorias/categoria-gafas.png" alt="Gafas de sol">
+          <img class="d-none d-xl-block" src="./assets/Desktop/categorias/categoria-gafas.png" alt="Gafas de sol">
           <div class="card-body bg-black text-bg-dark">
-            <p class="text-center">Categoria</p>
+            <p class="text-center">Gafas</p>
           </div>
         </div>
       </div>
     </div>
 
     <!--Seccion de Productos en alta-->
-    <h2 class="text-center p-4">¡Productos que están en Alta!</h2>
+    <h2 class="container text-center my-3 mt-xl-5">¡Productos que están en Alta!</h2>
 
     <div class="container row mx-auto g-4 pb-4">
       <div class="col-12 col-md-6 col-xxl-4">
         <div class="card">
-          <svg
-            aria-label="Placeholder: Image cap"
-            class="bd-placeholder-img card-img-top"
-            height="180"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#868e96"></rect>
-            <text x="47%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
+          <img class="d-block d-md-none" src="./assets/Mobile/productos/camiseta.png" alt="Modelo masculino vistiendo camisa cafe y pantalon negro">
+          <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/productos/camiseta.png" alt="Modelo masculino vistiendo camisa cafe y pantalon negro">
+          <img class="d-none d-xl-block" src="./assets/Desktop/productos/camiseta.png" alt="Modelo masculino vistiendo camisa cafe y pantalon negro">
           <div class="card-body">
-            <h5 class="card-title">Producto</h5>
+            <h5 class="card-title">Camiseta confort</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
+              Multicolores y de varios tamaños. Tela de algodón 100% fresca para el verano. Diseño unisex.
+            </p>
+            <p class="precio">$25</p>
+            <a href="#" class="btn btn-bd-lila">Ver Más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xxl-4">
+        <div class="card">
+          <img class="d-block d-md-none" src="./assets/Mobile/productos/pantalon.png" alt="Modelo femenina con pantalon de Sastre">
+          <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/productos/pantalon.png" alt="Modelo femenina con pantalon de Sastre">
+          <img class="d-none d-xl-block" src=".//assets/Desktop/productos/pantalon.png" alt="Modelo femenina con pantalon de Sastre">
+          <div class="card-body">
+            <h5 class="card-title">Pantalón de Sastre</h5>
+            <p class="card-text">
+              Modelo Wide Leg de sastrería en lino. ¡Una pieza para toda la vida!.
             </p>
             <p class="precio">$30</p>
             <a href="#" class="btn btn-bd-lila">Ver Más</a>
@@ -336,26 +280,15 @@
 
       <div class="col-12 col-md-6 col-xxl-4">
         <div class="card">
-          <svg
-            aria-label="Placeholder: Image cap"
-            class="bd-placeholder-img card-img-top"
-            height="180"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#868e96"></rect>
-            <text x="47%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
+          <img class="d-block d-md-none" src="./assets/Mobile/productos/tenis.png" alt="Sneakers casuales blancos">
+          <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/productos/tenis.png" alt="Sneakers casuales blancos">
+          <img class="d-none d-xl-block" src="./assets/Desktop/productos/tenis.png" alt="Sneakers casuales blancos">
           <div class="card-body">
-            <h5 class="card-title">Producto</h5>
+            <h5 class="card-title">Tenis Chunky</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
+              Sneakers casuales con suela más alta y diseño robusto. Modelo unisex..
             </p>
-            <p class="precio">$30</p>
+            <p class="precio">$50</p>
             <a href="#" class="btn btn-bd-lila">Ver Más</a>
           </div>
         </div>
@@ -363,26 +296,15 @@
 
       <div class="col-12 col-md-6 col-xxl-4">
         <div class="card">
-          <svg
-            aria-label="Placeholder: Image cap"
-            class="bd-placeholder-img card-img-top"
-            height="180"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#868e96"></rect>
-            <text x="47%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
+          <img class="d-block d-md-none" src="./assets/Mobile/productos/chaqueta-jeans.png" alt="Modelo masculino vistiendo oversize con cuello de gamuza">
+          <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/productos/chaqueta-jeans.png" alt="Modelo masculino vistiendo oversize con cuello de gamuza">
+          <img class="d-none d-xl-block" src="./assets/Desktop/productos/chaqueta-jeans.png" alt="Modelo masculino vistiendo oversize con cuello de gamuza">
           <div class="card-body">
-            <h5 class="card-title">Producto</h5>
+            <h5 class="card-title">Chaqueta Jeans</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
+              Modelo unisex oversize con cuello de gamuza. ¡Atemporal y auténtica!.
             </p>
-            <p class="precio">$30</p>
+            <p class="precio">$40</p>
             <a href="#" class="btn btn-bd-lila">Ver Más</a>
           </div>
         </div>
@@ -390,26 +312,15 @@
 
       <div class="col-12 col-md-6 col-xxl-4">
         <div class="card">
-          <svg
-            aria-label="Placeholder: Image cap"
-            class="bd-placeholder-img card-img-top"
-            height="180"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#868e96"></rect>
-            <text x="47%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
+          <img class="d-block d-md-none" src="./assets/Mobile/productos/gafas.png" alt="Lentes metálico en grafito con lentes redondeadas">
+          <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/productos/gafas.png" alt="Lentes metálico en grafito con lentes redondeadas">
+          <img class="d-none d-xl-block" src="./assets/Desktop/productos/gafas.png" alt="Lentes metálico en grafito con lentes redondeadas">
           <div class="card-body">
-            <h5 class="card-title">Producto</h5>
+            <h5 class="card-title">Gafas Retro</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
+              Montura metálica en grafito con lentes redondeadas. ¡Upgrade a tu estilo!.
             </p>
-            <p class="precio">$30</p>
+            <p class="precio">$28</p>
             <a href="#" class="btn btn-bd-lila">Ver Más</a>
           </div>
         </div>
@@ -417,53 +328,15 @@
 
       <div class="col-12 col-md-6 col-xxl-4">
         <div class="card">
-          <svg
-            aria-label="Placeholder: Image cap"
-            class="bd-placeholder-img card-img-top"
-            height="180"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#868e96"></rect>
-            <text x="47%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
+          <img class="d-block d-md-none" src="./assets/Mobile/productos/cartera.png" alt="Bolso camel en cuero sintético de alta duración.">
+          <img class="d-none d-md-block d-xl-none" src="./assets/Tablet/productos/cartera.png" alt="Bolso camel en cuero sintético de alta duración.">
+          <img class="d-none d-xl-block" src="./assets/Desktop/productos/cartera.png" alt="Bolso camel en cuero sintético de alta duración.">
           <div class="card-body">
-            <h5 class="card-title">Producto</h5>
+            <h5 class="card-title">Cartera Camel</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
+              Bolso camel en cuero sintético de alta duración. ¡Ideal para acompañarte toda la vida!
             </p>
-            <p class="precio">$30</p>
-            <a href="#" class="btn btn-bd-lila">Ver Más</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-xxl-4">
-        <div class="card">
-          <svg
-            aria-label="Placeholder: Image cap"
-            class="bd-placeholder-img card-img-top"
-            height="180"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#868e96"></rect>
-            <text x="47%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-          </svg>
-          <div class="card-body">
-            <h5 class="card-title">Producto</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
-            </p>
-            <p class="precio">$30</p>
+            <p class="precio">$55</p>
             <a href="#" class="btn btn-bd-lila">Ver Más</a>
           </div>
         </div>
@@ -473,7 +346,7 @@
     <!--Seccion de facilidades-->
     <section class="pb-4 bg-black text-bg-dark">
       <!--pb= margen de abajo-->
-      <h2 class="text-center mb-4 pt-4">Conoce todas nuestras facilidades</h2>
+      <h2 class="text-center py-4">Conoce todas nuestras facilidades</h2>
       <div
         class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-4 px-3"
       >
@@ -511,7 +384,9 @@
     </section>
 
     <!--Seccion del formulario-->
-    <form class="border border-secondary my-3 p-3 text-center div-novedades mx-auto">
+    <form
+      class="container border-secondary my-3 p-3 mt-xl-5 text-center div-novedades mx-auto"
+    >
       <h5>
         ¿Quieres recibir nuestras novedades, promociones exclusivas y un 10% de
         descuento en tu primera compra? ¡Regístrate!
@@ -523,14 +398,20 @@
           placeholder="Ingresa tu correo electrónico"
           aria-label="Ingresa tu correo electrónico"
           aria-describedby="button-addon2"
-        /> <!--El form-control hace que se rellene automatico el input-->
-        <button class="btn btn-bd-lila" type="button" id="button-addon2">Enviar</button>
+        />
+        <!--El form-control hace que se rellene automatico el input-->
+        <button class="btn btn-bd-lila" type="button" id="button-addon2">
+          Enviar
+        </button>
       </div>
     </form>
 
     <!--Seccion footer-->
     <footer>
-      <p class="text-center py-3 bg-black text-bg-dark">2025 <i class="bi bi-c-circle"></i> Desarrollado por Alura y Replicado por JoseD  | Proyecto ficticio sin fines comerciales</p>
+      <p class="text-center py-3 bg-black text-bg-dark">
+        2025 <i class="bi bi-c-circle"></i> Desarrollado por Alura y Replicado
+        por JoseD | Proyecto ficticio sin fines comerciales
+      </p>
     </footer>
   </body>
 </html>
